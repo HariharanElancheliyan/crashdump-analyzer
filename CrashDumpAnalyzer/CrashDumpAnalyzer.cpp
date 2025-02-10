@@ -2,6 +2,12 @@
 #include <fstream>
 #include "DumpAnalyzer.h"
 
+bool IsFileExists(const std::string& filename) 
+{
+    std::ifstream file(filename);
+    return file.good();
+}
+
 bool IsPathExists(const std::string& path) 
 {
     DWORD fileAttr = GetFileAttributesA(path.c_str());
@@ -78,7 +84,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    if (!IsPathExists(dumpfile_path)) 
+    if (!IsFileExists(dumpfile_path))
     {
         std::cerr << "Dumpfile path does not exist: " << dumpfile_path << "\n";
         return 1;
