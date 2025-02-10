@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+CrashDumpAnalyzer/.vs
+CrashDumpAnalyzer/CrashDum.f7b28377/Release
+CrashDumpAnalyzer/Release
