@@ -27,7 +27,7 @@ public:
 
 	std::string GetExceptionType();
 
-	std::string GetModuleVersion(std::string file_name = "ZMAgent.exe");
+	std::string GetModuleVersion(std::string file_name = "test_application.exe");
 
 	std::vector<std::string> GetStackTrace();
 	
